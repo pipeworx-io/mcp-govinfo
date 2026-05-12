@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/govinfo",
+  "title": "Govinfo",
+  "description": "GovInfo.gov MCP — full text of US government publications",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/govinfo",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-govinfo",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/govinfo/mcp"
+    }
+  ]
+}
