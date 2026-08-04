@@ -1,14 +1,25 @@
-# mcp-govinfo
+# @pipeworx/govinfo
 
-GovInfo.gov MCP — full text of US government publications
+GovInfo.gov MCP — full text of US government publications.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `get_granule` | Granule metadata for a sub-unit within a package. |
+- `list_collections()`
+- `search_packages(query, collections?, congress?, date_from?, date_to?, page_size?, offset_mark?)`
+- `get_package(package_id)`
+- `list_granules(package_id, page_size?, offset_mark?)`
+- `get_granule(package_id, granule_id)`
+
+## Auth
+
+- **Platform key:** reuses `PLATFORM_DATAGOV_KEY`.
+- **BYO:** `?_apiKey=<key>` (api.data.gov key).
+
+## Data source
+
+`https://api.govinfo.gov` — `?api_key=` query param.
 
 ## Quick Start
 
@@ -24,7 +35,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -48,7 +59,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
