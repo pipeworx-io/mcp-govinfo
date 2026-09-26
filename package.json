@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-govinfo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "GovInfo.gov MCP — full text of US government publications",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-22103c52d69c688fb0cf08c0cc777808e0190a83a314899783af3f3fa5b9dc61",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-4763886da482e32262cee98280acfb985ec90091a604ef4cbdf1eb3dbfdc89ae",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
